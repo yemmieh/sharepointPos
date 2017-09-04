@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9009BEA6-69D8-42FA-BBBC-D1F3ED9CA02A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POSManager.Domain</RootNamespace>
+    <AssemblyName>POSManager.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>..\packages\EPPlus.4.0.5\lib\net20\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.Linq, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Sybase.AdoNet2.AseClient">
+      <HintPath>..\POSManager.SharePoint\Dependencies\Sybase.AdoNet2.AseClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Logic\Abstract\IAccount.cs" />
+    <Compile Include="Logic\Abstract\IBranch.cs" />
+    <Compile Include="Logic\Abstract\ICustomer.cs" />
+    <Compile Include="Logic\Abstract\IDepartment.cs" />
+    <Compile Include="Logic\Abstract\IEmployee.cs" />
+    <Compile Include="Logic\Abstract\IManager.cs" />
+    <Compile Include="Logic\Abstract\IMessagingService.cs" />
+    <Compile Include="Logic\Abstract\ISettings.cs" />
+    <Compile Include="Logic\Abstract\IMerchant.cs" />
+    <Compile Include="Logic\Abstract\IListing.cs" />
+    <Compile Include="Logic\POSFlowManager.cs" />
+    <Compile Include="Logic\TestAccount.cs" />
+    <Compile Include="Logic\TestBranch.cs" />
+    <Compile Include="Logic\TestCustomer.cs" />
+    <Compile Include="Logic\TestDepartment.cs" />
+    <Compile Include="Logic\TestEmployee.cs" />
+    <Compile Include="Logic\TestListing.cs" />
+    <Compile Include="Logic\TestMailer.cs" />
+    <Compile Include="Logic\POSCache.cs" />
+    <Compile Include="Logic\TestMerchant.cs" />
+    <Compile Include="Logic\ZenithAccount.cs" />
+    <Compile Include="Logic\ZenithBranch.cs" />
+    <Compile Include="Logic\ZenithCustomer.cs" />
+    <Compile Include="Logic\ZenithDepartment.cs" />
+    <Compile Include="Logic\ZenithEmployee.cs" />
+    <Compile Include="Logic\ZenithListing.cs" />
+    <Compile Include="Logic\ZenithMailer.cs" />
+    <Compile Include="Logic\ZenithMerchant.cs" />
+    <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\Approval.cs" />
+    <Compile Include="Models\Branch.cs" />
+    <Compile Include="Models\CommunicationMode.cs" />
+    <Compile Include="Models\Constants.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\History.cs" />
+    <Compile Include="Models\Location.cs" />
+    <Compile Include="Models\MerchantUpdate.cs" />
+    <Compile Include="Models\MerchantUpdateHistory.cs" />
+    <Compile Include="Models\MerchantUpdateType.cs" />
+    <Compile Include="Models\MessageClass.cs" />
+    <Compile Include="Models\NotificationUpdate.cs" />
+    <Compile Include="Models\POSDBContext.cs" />
+    <Compile Include="Models\POSGroup.cs" />
+    <Compile Include="Models\POSOption.cs" />
+    <Compile Include="Models\POSRequest.cs" />
+    <Compile Include="Models\POSType.cs" />
+    <Compile Include="Models\ReportViewerUpdate.cs" />
+    <Compile Include="Models\RequestStage.cs" />
+    <Compile Include="Models\Settings.cs" />
+    <Compile Include="Models\SettlementUpdate.cs" />
+    <Compile Include="Models\Status.cs" />
+    <Compile Include="Models\Terminal.cs" />
+    <Compile Include="Models\TerminalDetails.cs" />
+    <Compile Include="Models\TerminalUpdate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\POSMetaDevelopment.cs" />
+    <Compile Include="Utils\TemplateUtils.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="key.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

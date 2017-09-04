@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace POSManager.Domain.Models
+{
+    public class TerminalUpdate
+    {
+        public int Id { get; set; }
+        public int POSRequestId { get; set; }
+        public string RequestingBranch { get; set; }
+        public string Department { get; set; }
+        public string MerchantId { get; set; }
+        public string MerchantName { get; set; }
+        public bool NewMID { get; set; }
+        public string NewMerchantId { get; set; }
+        public string CurrentSettlementAccount { get; set; }
+        public string NewSettlementAccount { get; set; }
+        public string CurrentTerminals { get; set; }
+        public string AccountName { get; set; }
+        public string ReAssignedTerminals { get; set; }
+        public string CustomerRequest { get; set; }
+        public string Comment { get; set; }
+    }
+}

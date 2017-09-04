@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POSManager.Domain", "POSManager.Domain\POSManager.Domain.csproj", "{9009BEA6-69D8-42FA-BBBC-D1F3ED9CA02A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POSManager.SharePoint", "POSManager.SharePoint\POSManager.SharePoint.csproj", "{AA58D0AC-31BA-4B40-994C-20928E7B9615}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POSManager.API", "POSManager.API\POSManager.API.csproj", "{4C90EE04-B054-47DE-8B8E-479A5CD47414}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9009BEA6-69D8-42FA-BBBC-D1F3ED9CA02A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9009BEA6-69D8-42FA-BBBC-D1F3ED9CA02A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9009BEA6-69D8-42FA-BBBC-D1F3ED9CA02A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9009BEA6-69D8-42FA-BBBC-D1F3ED9CA02A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA58D0AC-31BA-4B40-994C-20928E7B9615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA58D0AC-31BA-4B40-994C-20928E7B9615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA58D0AC-31BA-4B40-994C-20928E7B9615}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AA58D0AC-31BA-4B40-994C-20928E7B9615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA58D0AC-31BA-4B40-994C-20928E7B9615}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA58D0AC-31BA-4B40-994C-20928E7B9615}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4C90EE04-B054-47DE-8B8E-479A5CD47414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C90EE04-B054-47DE-8B8E-479A5CD47414}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C90EE04-B054-47DE-8B8E-479A5CD47414}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C90EE04-B054-47DE-8B8E-479A5CD47414}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

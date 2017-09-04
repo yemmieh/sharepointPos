@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA58D0AC-31BA-4B40-994C-20928E7B9615}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POSManager.SharePoint</RootNamespace>
+    <AssemblyName>POSManager.SharePoint</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <AssemblyDeploymentTarget>WebApplication</AssemblyDeploymentTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.IdentityModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.SharePoint.IdentityModel\v4.0_15.0.0.0__71e9bce111e9429c\Microsoft.SharePoint.IdentityModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Layouts\POSManager.SharePoint\AwaitingApproval.aspx.cs">
+      <DependentUpon>AwaitingApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\POSManager.SharePoint\AwaitingApproval.aspx.designer.cs">
+      <DependentUpon>AwaitingApproval.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\POSManager.SharePoint\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\POSManager.SharePoint\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\POSManager.SharePoint\MerchantUpdate.aspx.cs">
+      <DependentUpon>MerchantUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\POSManager.SharePoint\MerchantUpdate.aspx.designer.cs">
+      <DependentUpon>MerchantUpdate.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\POSManager.SharePoint\MerchantUpdates.aspx.cs">
+      <DependentUpon>MerchantUpdates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\POSManager.SharePoint\MerchantUpdates.aspx.designer.cs">
+      <DependentUpon>MerchantUpdates.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\POSManager.SharePoint\MyRequest.aspx.cs">
+      <DependentUpon>MyRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\POSManager.SharePoint\MyRequest.aspx.designer.cs">
+      <DependentUpon>MyRequest.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\POSManager.SharePoint\NewRequest.aspx.cs">
+      <DependentUpon>NewRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\POSManager.SharePoint\NewRequest.aspx.designer.cs">
+      <DependentUpon>NewRequest.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\POSManager.SharePoint\POS.master.cs">
+      <DependentUpon>POS.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\POSManager.SharePoint\POS.master.designer.cs">
+      <DependentUpon>POS.master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\POSManager.SharePoint\POSDetails.aspx.cs">
+      <DependentUpon>POSDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\POSManager.SharePoint\POSDetails.aspx.designer.cs">
+      <DependentUpon>POSDetails.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\POSManager.SharePoint\ReportDashboard.aspx.cs">
+      <DependentUpon>ReportDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\POSManager.SharePoint\ReportDashboard.aspx.designer.cs">
+      <DependentUpon>ReportDashboard.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\POSManager.SharePoint\UpdateDetails.aspx.cs">
+      <DependentUpon>UpdateDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\POSManager.SharePoint\UpdateDetails.aspx.designer.cs">
+      <DependentUpon>UpdateDetails.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POSManagerPageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Redirect\Redirect.cs" />
+    <Compile Include="Redirect\RedirectUserControl.ascx.cs">
+      <DependentUpon>RedirectUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Redirect\RedirectUserControl.ascx.designer.cs">
+      <DependentUpon>RedirectUserControl.ascx.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{88a698c9-a928-4e01-94b5-234b1217e2da}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\POSManager.SharePoint\POS.master" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-bold-webfont.eot" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-bold-webfont.ttf" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-bold-webfont.woff" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-bold-webfont.woff2" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-extrabold-webfont.eot" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-extrabold-webfont.ttf" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-extrabold-webfont.woff" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-extrabold-webfont.woff2" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-extralight-webfont.eot" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-extralight-webfont.ttf" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-extralight-webfont.woff" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-extralight-webfont.woff2" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-light-webfont.eot" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-light-webfont.ttf" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-light-webfont.woff" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-light-webfont.woff2" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-medium-webfont.eot" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-medium-webfont.ttf" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-medium-webfont.woff" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-medium-webfont.woff2" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-regular-webfont.eot" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-regular-webfont.ttf" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-regular-webfont.woff" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-regular-webfont.woff2" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-semibold-webfont.eot" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-semibold-webfont.ttf" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-semibold-webfont.woff" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-semibold-webfont.woff2" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Layouts\POSManager.SharePoint\Static\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dc4f094b-aafb-4509-be78-b06f154c1c8a}</SharePointProjectItemId>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Package\Package.package">
+      <PackageId>{04a4b617-1e56-47ff-9b65-78549423e896}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Redirect\Redirect.webpart" />
+    <None Include="Redirect\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2568bc9f-136c-4b9f-be1f-dfd7e91ca8df}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\POSManager.SharePoint\AwaitingApproval.aspx" />
+    <Content Include="Layouts\POSManager.SharePoint\Login.aspx" />
+    <Content Include="Layouts\POSManager.SharePoint\MerchantUpdate.aspx" />
+    <Content Include="Layouts\POSManager.SharePoint\MerchantUpdates.aspx" />
+    <Content Include="Layouts\POSManager.SharePoint\MyRequest.aspx" />
+    <Content Include="Layouts\POSManager.SharePoint\NewRequest.aspx" />
+    <Content Include="Layouts\POSManager.SharePoint\POSDetails.aspx" />
+    <Content Include="Layouts\POSManager.SharePoint\POSDocumentation\style.css" />
+    <Content Include="Layouts\POSManager.SharePoint\ReportDashboard.aspx" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-bold-webfont.svg" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-extrabold-webfont.svg" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-extralight-webfont.svg" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-light-webfont.svg" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-medium-webfont.svg" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-regular-webfont.svg" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-semibold-webfont.svg" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\fonts\dosis-webfont.css" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\Images\favicon.ico" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\Images\logo.jpg" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\Images\ui-icons_555555_256x240.png" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\Script\angular.min.js" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\Script\bootstrap-formhelpers.js" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\Script\bootstrap.js" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\Script\jquery-ui-min.js" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\Script\jquery.the-modal.js" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\Script\jquery.timepicker.min.js" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\Script\jQuery2.1.1.js" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\Script\linq.min.js" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\Script\multiselect.min.js" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\Script\tinymce.min.js" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\Style\bootstrap-formhelpers.min.css" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\Style\bootstrap.min.css" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\Style\common.css" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\Style\dosis-webfont.css" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\Style\jquery-ui-min.css" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\Style\jquery.timepicker.css" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\Style\style.css" />
+    <Content Include="Layouts\POSManager.SharePoint\Static\Style\the-modal.css" />
+    <Content Include="Layouts\POSManager.SharePoint\UpdateDetails.aspx" />
+    <Content Include="Redirect\Elements.xml" />
+    <Content Include="Redirect\RedirectUserControl.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\POSManager.Domain\POSManager.Domain.csproj">
+      <Project>{9009bea6-69d8-42fa-bbbc-d1f3ed9ca02a}</Project>
+      <Name>POSManager.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

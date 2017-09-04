@@ -1,0 +1,15 @@
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.SharePoint\obj\Debug\POSManager.SharePoint.csprojResolveAssemblyReference.cache
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.SharePoint\bin\Debug\POSManager.SharePoint.dll.config
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.SharePoint\bin\Debug\POSManager.SharePoint.dll
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.SharePoint\bin\Debug\POSManager.SharePoint.pdb
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.SharePoint\bin\Debug\EntityFramework.dll
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.SharePoint\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.SharePoint\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.SharePoint\bin\Debug\EntityFramework.xml
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.SharePoint\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.SharePoint\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.SharePoint\obj\Debug\POSManager.SharePoint.dll
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.SharePoint\obj\Debug\POSManager.SharePoint.pdb
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.SharePoint\bin\Debug\POSManager.Domain.dll
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.SharePoint\bin\Debug\Sybase.AdoNet2.AseClient.dll
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.SharePoint\bin\Debug\POSManager.Domain.pdb

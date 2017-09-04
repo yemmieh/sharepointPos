@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="POSManager.SharePoint Feature1" Id="7c13f892-21b8-4c4a-b56a-fc33d23cafae" Scope="Site">
+  <ElementManifests>
+    <ElementManifest Location="Redirect\Elements.xml" />
+    <ElementFile Location="Redirect\Redirect.webpart" />
+  </ElementManifests>
+</Feature>

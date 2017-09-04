@@ -1,0 +1,13 @@
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.Domain\bin\Debug\POSManager.Domain.dll.config
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.Domain\bin\Debug\POSManager.Domain.dll
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.Domain\bin\Debug\POSManager.Domain.pdb
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.Domain\bin\Debug\EPPlus.dll
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.Domain\bin\Debug\EPPlus.xml
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.Domain\obj\Debug\POSManager.Domain.dll
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.Domain\obj\Debug\POSManager.Domain.pdb
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.Domain\bin\Debug\Sybase.AdoNet2.AseClient.dll
+C:\Users\Ibraheem\documents\visual studio 2013\Projects\POSManager\POSManager.Domain\obj\Debug\POSManager.Domain.csprojResolveAssemblyReference.cache

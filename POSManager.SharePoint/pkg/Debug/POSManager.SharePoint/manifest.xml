@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="04a4b617-1e56-47ff-9b65-78549423e896" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="EntityFramework.dll" DeploymentTarget="WebApplication" />
+    <Assembly Location="EntityFramework.SqlServer.dll" DeploymentTarget="WebApplication" />
+    <Assembly Location="EPPlus.dll" DeploymentTarget="WebApplication" />
+    <Assembly Location="Newtonsoft.Json.dll" DeploymentTarget="WebApplication" />
+    <Assembly Location="Sybase.AdoNet2.AseClient.dll" DeploymentTarget="WebApplication" />
+    <Assembly Location="POSManager.Domain.dll" DeploymentTarget="WebApplication" />
+    <Assembly Location="POSManager.SharePoint.dll" DeploymentTarget="WebApplication">
+      <SafeControls>
+        <SafeControl Assembly="POSManager.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=65d3952a678f79a6" Namespace="POSManager.SharePoint.Redirect" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\POSManager.SharePoint\Redirect\RedirectUserControl.ascx" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\POS.master" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-bold-webfont.eot" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-bold-webfont.ttf" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-bold-webfont.woff" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-bold-webfont.woff2" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-extrabold-webfont.eot" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-extrabold-webfont.ttf" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-extrabold-webfont.woff" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-extrabold-webfont.woff2" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-extralight-webfont.eot" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-extralight-webfont.ttf" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-extralight-webfont.woff" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-extralight-webfont.woff2" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-light-webfont.eot" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-light-webfont.ttf" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-light-webfont.woff" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-light-webfont.woff2" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-medium-webfont.eot" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-medium-webfont.ttf" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-medium-webfont.woff" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-medium-webfont.woff2" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-regular-webfont.eot" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-regular-webfont.ttf" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-regular-webfont.woff" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-regular-webfont.woff2" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-semibold-webfont.eot" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-semibold-webfont.ttf" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-semibold-webfont.woff" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-semibold-webfont.woff2" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\glyphicons-halflings-regular.eot" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\glyphicons-halflings-regular.ttf" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\glyphicons-halflings-regular.woff" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\glyphicons-halflings-regular.woff2" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\AwaitingApproval.aspx" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Login.aspx" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\MerchantUpdate.aspx" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\MerchantUpdates.aspx" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\MyRequest.aspx" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\NewRequest.aspx" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\POSDetails.aspx" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\POSDocumentation\style.css" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\ReportDashboard.aspx" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-bold-webfont.svg" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-extrabold-webfont.svg" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-extralight-webfont.svg" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-light-webfont.svg" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-medium-webfont.svg" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-regular-webfont.svg" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-semibold-webfont.svg" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\dosis-webfont.css" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\fonts\glyphicons-halflings-regular.svg" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\Images\favicon.ico" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\Images\logo.jpg" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\Images\ui-icons_555555_256x240.png" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\Script\angular.min.js" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\Script\bootstrap-formhelpers.js" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\Script\bootstrap.js" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\Script\jquery-ui-min.js" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\Script\jquery.the-modal.js" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\Script\jquery.timepicker.min.js" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\Script\jQuery2.1.1.js" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\Script\linq.min.js" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\Script\multiselect.min.js" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\Script\tinymce.min.js" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\Style\bootstrap-formhelpers.min.css" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\Style\bootstrap.min.css" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\Style\common.css" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\Style\dosis-webfont.css" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\Style\jquery-ui-min.css" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\Style\jquery.timepicker.css" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\Style\style.css" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\Static\Style\the-modal.css" />
+    <TemplateFile Location="Layouts\POSManager.SharePoint\UpdateDetails.aspx" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="POSManager.SharePoint_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

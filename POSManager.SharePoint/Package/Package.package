@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="04a4b617-1e56-47ff-9b65-78549423e896" solutionId="04a4b617-1e56-47ff-9b65-78549423e896" resetWebServer="false" sharePointProductVersion="15.0" name="POSManager.SharePoint" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="EntityFramework.dll" deploymentTarget="WebApplication" sourcePath="Dependencies\EntityFramework.dll" />
+    <customAssembly location="EntityFramework.SqlServer.dll" deploymentTarget="WebApplication" sourcePath="Dependencies\EntityFramework.SqlServer.dll" />
+    <customAssembly location="EPPlus.dll" deploymentTarget="WebApplication" sourcePath="Dependencies\EPPlus.dll" />
+    <customAssembly location="Newtonsoft.Json.dll" deploymentTarget="WebApplication" sourcePath="Dependencies\Newtonsoft.Json.dll" />
+    <customAssembly location="Sybase.AdoNet2.AseClient.dll" deploymentTarget="WebApplication" sourcePath="Dependencies\Sybase.AdoNet2.AseClient.dll" />
+    <projectOutputAssembly location="POSManager.Domain.dll" deploymentTarget="WebApplication" projectPath="..\POSManager.Domain\POSManager.Domain.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="88a698c9-a928-4e01-94b5-234b1217e2da" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="dc4f094b-aafb-4509-be78-b06f154c1c8a" />
+  </projectItems>
+</package>
